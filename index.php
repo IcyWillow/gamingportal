@@ -1,4 +1,18 @@
-﻿<!DOCTYPE html>
+﻿<?php
+// Initialize the session
+session_start();
+
+$authentication = true;
+
+// Check if the user is logged in, if not then redirect him to login page
+if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+    $authentication = false;
+}
+?>
+
+
+
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -8,8 +22,8 @@
 
 <body>
   <header>
-    <a href="./src/login.php">Login</a>
-    <h1>Welcome Useranme!</h1>
+    <?php if(!$authentication) {echo '<a href="./src/login.php">Login</a>';} else {echo '<a href="./src/logout.php">Logout</a>';} ?>
+    <h1>Welcome <?php if($authentication) {echo ucfirst(htmlspecialchars($_SESSION["username"])); } else {echo "not logged person";} ?>!</h1>
     <h2>to Gaming Portal</h2>
   </header>
   <div class="content">
