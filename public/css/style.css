@@ -8,7 +8,7 @@ p {
     font-family: 'Open Sans', sans-serif;
 }
 
-h2 {
+h1 {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
 }
@@ -16,7 +16,7 @@ h2 {
 body {
     background-color: #333333;
 }
-
+ 
 label {
     font-family: 'Open Sans', sans-serif;
     font-size: 25px;
@@ -45,7 +45,7 @@ label {
     height: 422px;
     margin: 0 auto;
     margin-top: 10%;
-    padding: 20px 20px 0px 20px;
+    padding: 20px 20px 20px 20px;
     max-width: 450px;
     min-width: 350px;
 }
@@ -61,7 +61,7 @@ label {
     font-family: 'Open Sans', sans-serif;
 }
 
-.btn {
+button {
     width: 200px;
     height: 50px;
     margin-top: 15px;
@@ -71,7 +71,7 @@ label {
     font-size: 15px;
 }
 
-.btn:hover {
+button:hover {
     background-color: rgb(221, 138, 43)
 }
 

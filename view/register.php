@@ -99,10 +99,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <meta charset="UTF-8" />
     <title>Sign Up</title>
     <link rel="stylesheet" href="../public/css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
 </head>
 <body>
     <div class="wrapper">
-        <h2>Sign Up</h2>
+        <h1>Sign Up</h1>
         <p>Please fill this form to create an account.</p>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
@@ -127,8 +128,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 </span>
             </div>
             <div class="form-group">
-                <input type="submit" class="btn btn-primary" value="Submit" />
-                <input type="reset" class="btn btn-default" value="Reset" />
+                <button type="submit">submit</button>
+                <button type="reset">reset</button>
             </div>
             <p>
                 Already have an account?

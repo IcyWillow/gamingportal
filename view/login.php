@@ -92,13 +92,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <title>Login</title>
+    <title>Gaming Portal</title>
     <link rel="stylesheet" type="text/css" href="../public/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
 </head>
 <body>
     <div class="wrapper">
-        <h2 id="loginTitle">Login</h2>
+        <h1 id="loginTitle">Login</h1>
         <p class="introText">Please fill in your credentials to login.</p>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
@@ -116,7 +116,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 </span>
             </div>
             <div class="form-group">
-                <input type="submit" class="btn btn-primary" value="Login" />
+                <button type="submit">Login</button>
             </div>
             <p class="introText">
                 Don't have an account?

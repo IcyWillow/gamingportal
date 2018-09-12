@@ -4,11 +4,12 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="./edit.css">
+  <link rel="stylesheet" href="../public/css/style.css">
   <title>Game Portal</title>
 </head>
 
 <body>
+  <div class="wrapper">
     <form action="../lib/upload.php" method="post" class="edit-form" enctype="multipart/form-data">
         <h1>Create / Edit</h1>
         <label for="game-title">Title:</label>
@@ -25,6 +26,7 @@
             <button class="submit-button" type="submit">Submit</button>
         </div>
     </form>
+  </div>
 </body>
 
 </html>
