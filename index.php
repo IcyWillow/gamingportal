@@ -1,13 +1,27 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <title></title>
-</head>
-<body>
+<html lang="en">
 
-<h1>test</h1>
- 
-   
+<head>
+  <meta charset="UTF-8">
+  <title>Gaming Portal</title>
+</head>
+
+<body>
+  <header>
+    <div>Login</div>
+    <h1>Welcome Useranme!</h1>
+    <h2>to Gaming Portal</h2>
+  </header>
+  <div class="content">
+    <img src="" alt="search icon">
+    <input type="text" name="search" id="search">
+    <div class="add">
+      <img src="" alt="add icon">
+      <p></p>
+    </div>
+    <div class="card-container">
+    </div>
+  </div>
 </body>
+
 </html>
