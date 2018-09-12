@@ -18,8 +18,8 @@
         <input type="text" name="game-publisher" id="game-publisher" required />
         <label for="game-description">Description:</label>
         <input type="text" name="game-description" id="game-description" required />
-        <label for="game-image">Picture:</label>
-        <input type="file" name="fileToUpload" id="fileToUpload"    alt="game-image" required/>
+        <label for="fileToUpload">Picture:</label>
+        <input type="file" name="fileToUpload" id="fileToUpload" required/>
 
         <div class="button-container">
             <button class="cancel-button" type="reset">Cancel</button>

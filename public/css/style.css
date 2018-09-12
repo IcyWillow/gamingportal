@@ -16,7 +16,7 @@ h1 {
 body {
     background-color: #333333;
 }
- 
+
 label {
     font-family: 'Open Sans', sans-serif;
     font-size: 25px;
@@ -69,6 +69,7 @@ button {
     background-color: #F79421;
     border: 0;
     font-size: 15px;
+    cursor: pointer;
 }
 
 button:hover {
