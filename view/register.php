@@ -1,6 +1,6 @@
 <?php
 // Include config file
-require_once "./config/config.php";
+require_once "../config/config.php";
 
 // Define variables and initialize with empty values
 $username = $password = $confirm_password = "";
@@ -78,7 +78,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             // Attempt to execute the prepared statement
             if(mysqli_stmt_execute($stmt)){
                 // Redirect to login page
-                header("location: login.php");
+                header("location: ./login.php");
             } else{
                 echo "Something went wrong. Please try again later.";
             }
@@ -98,17 +98,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <head>
     <meta charset="UTF-8" />
     <title>Sign Up</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css" />
-    <style type="text/css">
-        body {
-            font: 14px sans-serif;
-        }
-
-        .wrapper {
-            width: 350px;
-            padding: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="../public/css/style.css" />
 </head>
 <body>
     <div class="wrapper">
@@ -142,7 +132,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             </div>
             <p>
                 Already have an account?
-                <a href="login.php">Login here</a>.
+                <a href="./login.php">Login here</a>.
             </p>
         </form>
     </div>

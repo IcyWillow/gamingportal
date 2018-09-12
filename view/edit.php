@@ -4,11 +4,12 @@
 
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="./edit.css">
   <title>Game Portal</title>
 </head>
 
 <body>
-  <form action="../index.php" method="put">
+  <form action="../public/index.php" method="put">
     <h1>Create / Edit</h1>
     <label for="game-title">Title:</label>
     <input type="text" name="game-title" id="game-title" required>

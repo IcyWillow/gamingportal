@@ -4,7 +4,7 @@ session_start();
 
 // Check if the user is logged in, if not then redirect him to login page
 if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
-    header("location: ./src/login.php");
+    header("location: ./login.php");
     exit;
 }
 ?>
@@ -14,7 +14,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 <head>
     <meta charset="UTF-8" />
     <title>Gaming Portal</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../public/css/style.css" />
 
 </head>
 <body>
@@ -28,7 +28,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     </div>
     <p>
 
-        <a href="src/logout.php" class="btn btn-danger">Sign Out of Your Account</a>
+        <a href="./logout.php" class="btn btn-danger">Sign Out of Your Account</a>
     </p>
 
     <div class="content">
