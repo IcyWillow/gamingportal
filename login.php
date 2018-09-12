@@ -1,5 +1,6 @@
 <?php
 include("src/config.php");
+
 session_start();
 
 if($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -11,7 +12,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "SELECT id FROM user WHERE user = '$myusername' and password = md5('$mypassword')";
     $result = mysqli_query($db,$sql);
     $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-    $active = $row['active'];
+    $active = $row['active']; 
 
     $count = mysqli_num_rows($result);
 
