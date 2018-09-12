@@ -11,9 +11,12 @@ USE gamingportal;
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 
+
+
 CREATE TABLE game (
 	id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     name NVARCHAR(50) NOT NULL,
+    publisher NVARCHAR(50) NOT NULL,
     description nvarchar(500) NOT NULL,
-    picture_directory nvarchar(100)
-);
+    picture_directory nvarchar(100));
+    

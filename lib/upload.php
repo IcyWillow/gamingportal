@@ -52,6 +52,21 @@ if ($uploadOk == 0) {
 } else {
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
         echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
+
+        $directory = "uploads/" . $pictureName;
+
+        //Prepare for insert:
+        $sql = "INSERT INTO game (name, description, publisher, picture_directory) VALUES (?,?,?,?)";
+
+
+        $stmt = mysqli_prepare($link, $sql);
+
+        $stmt->bind_param("ssss", $_POST['game-title'], $_POST['game-description'], $_POST['game-publisher'], $directory);
+
+        $stmt->execute();
+
+
+
     } else {
         echo "Sorry, there was an error uploading your file.";
     }
@@ -59,23 +74,9 @@ if ($uploadOk == 0) {
 
 
 
-//Prepare for insert:
-$sql = "INSERT INTO game (name, description, picture_directory) VALUES (?,?,?)";
-
-$stmt = mysqli_prepare($link, $sql);
-
-$stmt->bind_param("")
-
-$sql = "INSERT INTO game (name, description, picture_directory) VALUES ('" . $_POST['game-title'] . "', '". $_POST['game-publisher'] ."', '" . $_POST["game-description"] . "', '".$pictureName. "')";
-
-if (!$link) {
-    die("Connection failed: " . mysqli_connect_error());
-}
 
 
 
 
-
-$stmt->execute();
 
 ?>
