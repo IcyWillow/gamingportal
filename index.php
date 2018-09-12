@@ -22,6 +22,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
 <body>
   <header>
+      <!-- Not optimized gemäss Lehrperson -->
     <?php if(!$authentication) {echo '<a href="./src/login.php">Login</a>';} else {echo '<a href="./src/logout.php">Logout</a>';} ?>
     <h1>Welcome <?php if($authentication) {echo ucfirst(htmlspecialchars($_SESSION["username"])); } else {echo "not logged person";} ?>!</h1>
     <h2>to Gaming Portal</h2>
