@@ -8,7 +8,7 @@
 
 <body>
   <header>
-    <div>Login</div>
+    <a href="./src/login.php">Login</a>
     <h1>Welcome Useranme!</h1>
     <h2>to Gaming Portal</h2>
   </header>
