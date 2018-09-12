@@ -1,2 +1,4 @@
 
 *.phpproj
+*.user
+.vs/GamingPortal/v15/.suo
