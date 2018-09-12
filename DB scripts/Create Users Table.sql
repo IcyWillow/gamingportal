@@ -1,4 +1,4 @@
-
+drop database if exists gamingportal;
 
 CREATE database gamingportal;
 
