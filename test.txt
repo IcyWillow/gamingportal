@@ -1,3 +1,0 @@
-if (fleisch == true){
-	return fleisch;
-}
