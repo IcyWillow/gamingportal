@@ -1,9 +1,9 @@
 <?php
 // Database credentials.
-define('DB_SERVER', 'viniciuspontes.ch:3306');
-define('DB_USERNAME', 'vinic_portal');
-define('DB_PASSWORD', 'fleisch1234');
-define('DB_NAME', 'vinicius_gamingportal');
+define('DB_SERVER', 'localhost:3307');
+define('DB_USERNAME', 'root');
+define('DB_PASSWORD', '');
+define('DB_NAME', 'gamingportal');
 
 // Try to connect to database
 $link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
