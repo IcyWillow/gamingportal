@@ -8,15 +8,15 @@
 
 <body>
   <header>
-    <div>Login</div>
+    <a href="./src/login.php">Login</a>
     <h1>Welcome Useranme!</h1>
     <h2>to Gaming Portal</h2>
   </header>
   <div class="content">
-    <img src="" alt="search icon">
+    <img src="./media/searchIcon.png" alt="search icon">
     <input type="text" name="search" id="search">
     <div class="add">
-      <img src="" alt="add icon">
+      <img src="./media/plusIcon.png" alt="add icon">
       <p></p>
     </div>
     <div class="card-container">
