@@ -11,7 +11,7 @@ class Game {
         $this->releaseDate = $releaseDate;
     }
 
-    //creates new Gamecard for game
+    //Creates new Gamecard for game
     public function makeCard() {
         echo '<div class="gameCard">
         <h3 class="gameTitle">',$this->gameName,'</h3>
@@ -20,5 +20,4 @@ class Game {
         </div>';
     }
 }
-
 ?>

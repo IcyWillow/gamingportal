@@ -10,9 +10,6 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 }
 ?>
 
-
-
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -32,7 +29,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <input type="text" name="search" id="search">
     <div class="add">
       <img src="./images/plusIcon.png" alt="add icon">
-      <p></p>
+      <p>Create New</p>
     </div>
     <div class="card-container">
     </div>
