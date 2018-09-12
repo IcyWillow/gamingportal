@@ -1,15 +1,46 @@
 <?php
-include('./config/session.php');
+// Initialize the session
+session_start();
+
+// Check if the user is logged in, if not then redirect him to login page
+if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+    header("location: src/login.php");
+    exit;
+}
 ?>
-<html>
-   
-   <head>
-      <title>Welcome </title>
-   </head>
-   
-   <body>
-      <h1>Welcome <?php echo $login_session; ?></h1> 
-      <h2><a href="../logout.php">Sign Out</a></h2>
-   </body>
-   
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Gaming Portal</title>
+    <link rel="stylesheet" href="css/style.css" />
+
+</head>
+<body>
+    <div class="page-header">
+        <h1>
+            Hello,
+            <b>
+                <?php echo htmlspecialchars($_SESSION["username"]); ?>
+            </b>. Welcome Gaming Portal.
+        </h1>
+    </div>
+    <p>
+
+        <a href="src/logout.php" class="btn btn-danger">Sign Out of Your Account</a>
+    </p>
+
+    <div class="content">
+        <img src="" alt="search icon" />
+        <input type="text" name="search" id="search" />
+        <div class="add">
+            <img src="" alt="add icon" />
+            <p></p>
+        </div>
+        <div class="card-container"></div>
+    </div>
+</body>
+
+
 </html>
