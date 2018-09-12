@@ -98,6 +98,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <meta charset="UTF-8" />
     <title>Gaming Portal</title>
     <link rel="stylesheet" href="../public/css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
 </head>
 <body>
     <div class="wrapper">
@@ -126,8 +127,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 </span>
             </div>
             <div class="form-group">
-                <button type="reset">Cancel</button>
                 <button type="submit">Submit</button>
+                <button type="reset">Cancel</button>
             </div>
             <p>Already have an account?<a href="./login.php">Login here</a>.</p>
         </form>
