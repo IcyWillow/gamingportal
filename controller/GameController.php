@@ -16,7 +16,7 @@ class Game {
         echo '<div class="gameCard">
         <h3 class="gameTitle">',$this->gameName,'</h3>
         <p>',$this->publisher,'</p>
-        <p>',$this->releaseDate,'</p>      
+        <p>',$this->releaseDate,'</p>
         </div>';
     }
 }

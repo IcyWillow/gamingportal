@@ -32,6 +32,22 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
       <p>Create New</p>
     </div>
     <div class="card-container">
+      <?php
+        require_once '../controller/GameController.php';
+        require_once "../config/config.php";
+
+        $sql = "SELECT * FROM game";
+        $result = $link->query($sql);
+
+        if ($result->num_rows > 0) {
+          while($row = $result->fetch_assoc()) {
+            $newGame = new Game($row['name'], $row['publisher'], $row['description']);
+            $newGame->makeCard();
+          }
+      } else {
+          echo "0 results";
+      }
+      ?>
     </div>
   </div>
 </body>
