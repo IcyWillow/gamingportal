@@ -10,9 +10,6 @@
 
 require_once "../config/config.php";
 
-
-
-
 $target_dir = "../uploads/";
 $pictureName = $_FILES["fileToUpload"]["name"];
 $target_file = $target_dir . $pictureName;
@@ -54,14 +51,9 @@ if ($uploadOk == 0) {
         //Prepare for insert:
         $sql = "UPDATE game SET game-title = ?, game-description = ?, game-publisher = ?, picture_directory = ? WHERE name = ?";
 
-
         $stmt = mysqli_prepare($link, $sql);
-
         $stmt->bind_param("sssss", $_POST['game-title'], $_POST['game-description'], $_POST['game-publisher'], $directory, $_POST['selected_game']);
-
         $stmt->execute();
-
-
 
     } else {
         echo "Sorry, there was an error uploading your file.";
