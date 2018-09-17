@@ -13,8 +13,16 @@ h1 {
     text-transform: uppercase;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     background-color: #333333;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 label {
@@ -23,10 +31,28 @@ label {
     margin-top: 10px;
 }
 
+button {
+    width: 200px;
+    height: 50px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    border: 0;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+
+}
+
+a {
+    text-decoration: none;
+    font-weight: 550;
+}
+
 .form-control {
     height: 40px;
     border: none;
-    border-bottom: 2px solid #F79421;
     width: 200px;
     outline: none;
 }
@@ -36,15 +62,13 @@ label {
 }
 
 .wrapper {
-    border-top: 10px #F79421 solid;
     background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 50%;
-    height: 422px;
+    height: fit-content;
     margin: 0 auto;
-    margin-top: 10%;
     padding: 20px 20px 20px 20px;
     max-width: 450px;
     min-width: 350px;
@@ -61,23 +85,51 @@ label {
     font-family: 'Open Sans', sans-serif;
 }
 
-button {
-    width: 200px;
-    height: 50px;
-    margin-top: 15px;
-    margin-bottom: 20px;
-    background-color: #F79421;
-    border: 0;
-    font-size: 15px;
-    cursor: pointer;
+.cancel-button {
+    background-color: white;
+    border: 3px #F79421 solid;
 }
 
-button:hover {
-    background-color: rgb(221, 138, 43)
+.cancel-button:hover {
+    background-color: #f1f1f1; 
 }
 
-a {
-    text-decoration: none;
+.w-blue {
+    border-top: 10px #2BBBE9 solid;
+}
+
+.w-orange {
+    border-top: 10px #F79421 solid;
+}
+
+.f-blue {
+    border-bottom: 2px solid #2BBBE9;
+}
+
+.f-orange {
+    border-bottom: 2px solid #F79421;
+}
+
+.a-blue {
+    color: #2BBBE9;
+}
+
+.a-orange {
     color: #F79421;
-    font-weight: 550;
+}
+
+.b-blue {
+    background-color: #2BBBE9;
+}
+
+.b-orange {
+    background-color: #F79421;
+}
+
+.h-blue:hover {
+    background-color: rgb(39, 151, 189);
+}
+
+.h-orange:hover {
+    background-color: rgb(221, 138, 43)
 }

@@ -97,18 +97,18 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
 </head>
 <body>
-    <div class="wrapper">
+    <div class="wrapper w-blue">
         <h1 id="loginTitle">Login</h1>
         <p class="introText">Please fill in your credentials to login.</p>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-            <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
+            <div class="form-group f-blue <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
                 <label for="username">Username</label>
                 <input type="text" name="username" id="username" class="form-control" value="<?php echo $username; ?>" />
                 <span class="help-block">
                     <?php echo $username_err; ?>
                 </span>
             </div>
-            <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
+            <div class="form-group f-blue <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
                 <label for="password">Password</label>
                 <input type="password" name="password" id="password" class="form-control" />
                 <span class="help-block">
@@ -116,9 +116,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 </span>
             </div>
             <div class="form-group">
-                <button type="submit">Login</button>
+                <button class="b-blue h-blue" type="submit">Login</button>
             </div>
-            <p class="introText">Don't have an account?<a href="./register.php">Sign up now</a>.</p>
+            <p class="introText">Don't have an account? <a class="a-blue" href="./register.php">Sign up now</a>.</p>
         </form>
     </div>
 </body>
