@@ -101,7 +101,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
 </head>
 <body>
-    <div class="wrapper">
+    <div class="wrapper w-orange">
         <h1>Sign Up</h1>
         <p>Please fill this form to create an account.</p>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
@@ -112,14 +112,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                     <?php echo $username_err; ?>
                 </span>
             </div>
-            <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
+            <div class="form-group f-orange <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
                 <label for="password">Password</label>
                 <input type="password" name="password" id="password" class="form-control" value="<?php echo $password; ?>" />
                 <span class="help-block">
                     <?php echo $password_err; ?>
                 </span>
             </div>
-            <div class="form-group <?php echo (!empty($confirm_password_err)) ? 'has-error' : ''; ?>">
+            <div class="form-group f-orange <?php echo (!empty($confirm_password_err)) ? 'has-error' : ''; ?>">
                 <label for="confirm_password">Confirm Password</label>
                 <input type="password" name="confirm_password" id="confirm_password" class="form-control" value="<?php echo $confirm_password; ?>" />
                 <span class="help-block">
@@ -127,10 +127,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 </span>
             </div>
             <div class="form-group">
-                <button type="submit">Submit</button>
-                <button type="reset">Cancel</button>
+                <button class="b-orange h-orange" type="submit">Submit</button>
+                <button class="cancel-button" type="reset">Cancel</button>
             </div>
-            <p>Already have an account? <a href="./login.php">Login here</a>.</p>
+            <p>Already have an account? <a class="a-orange" href="./login.php">Login here</a>.</p>
         </form>
     </div>
 </body>
