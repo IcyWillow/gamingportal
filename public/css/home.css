@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #333333;
+    height: 100%;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+.bgImage {
+    height: 100vh;
+    background-image: url("../images/background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.headerContent {
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    padding: 20px;
+    text-align: center;
+    width: fit-content;
+}
+
+.gameCard {
+    border: 2px black solid;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 10px;
+    align-items: center;
+    background-color: white;
+}
+
+.add {
+    flex-direction: column;
+    justify-content: center;
+    background-color: #2BBBE9;
+}
+
+#createText{
+    margin-top: 5px;
+}

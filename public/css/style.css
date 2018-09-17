@@ -3,16 +3,20 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 p {
     font-family: 'Open Sans', sans-serif;
 }
+
 h1 {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
 }
+
 html {
     height: 100%;
 }
+
 body {
     background-color: #333333;
     height: 100%;
@@ -20,11 +24,13 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 label {
     font-family: 'Open Sans', sans-serif;
     font-size: 25px;
     margin-top: 10px;
 }
+
 button {
     width: 200px;
     height: 50px;
@@ -34,19 +40,23 @@ button {
     font-size: 15px;
     cursor: pointer;
 }
+
 a {
     text-decoration: none;
     font-weight: 550;
 }
+
 .form-control {
     height: 40px;
     border: none;
     width: 200px;
     outline: none;
 }
-#loginTitle {
+
+.loginTitle {
     margin-bottom: 20px;
 }
+
 .wrapper {
     background-color: white;
     display: flex;
@@ -59,59 +69,76 @@ a {
     max-width: 450px;
     min-width: 350px;
 }
+
 .form-group {
     display: flex;
     align-items: center;
     flex-direction: column;
     margin-top: 10px;
 }
+
 .introText {
     font-family: 'Open Sans', sans-serif;
 }
+
 .w-blue {
     border-top: 10px #2BBBE9 solid;
 }
+
 .w-orange {
     border-top: 10px #F79421 solid;
 }
+
 .f-blue {
     border-bottom: 2px solid #2BBBE9;
 }
+
 .f-orange {
     border-bottom: 2px solid #F79421;
 }
+
 .a-blue {
     color: #2BBBE9;
 }
+
 .a-orange {
     color: #F79421;
 }
+
 .blue-submit-button {
     background-color: #2BBBE9;
 }
+
 .orange-submit-button {
     background-color: #F79421;
 }
+
 .blue-submit-button:hover {
     background-color: #2797bd;
 }
+
 .orange-submit-button:hover {
     background-color: #dd8a2b
 }
+
 .help-block {
     font-family: 'Open Sans', sans-serif;
 }
+
 .orange-cancel-button {
     background-color: white;
     border: 3px #F79421 solid;
 }
+
 .orange-cancel-button:hover {
     background-color: #f1f1f1;
 }
+
 .blue-cancel-button {
     background-color: white;
     border: 3px #2BBBE9 solid;
 }
+
 .blue-cancel-button:hover {
     background-color: #E1FFFF;
 }
