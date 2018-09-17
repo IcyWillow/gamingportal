@@ -39,6 +39,7 @@ class Game {
         <img src="'.$this->imgSource.'" alt="Picture of the Game" />
         <h3 class="gameTitle">',$this->gameName,'</h3>
         <p>',$this->publisher,'</p>
+        <img class="icon" src="../public/images/penIcon.png" alt="edit icon" />
         </div>';
     }
     //Show all Games

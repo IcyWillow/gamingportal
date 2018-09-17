@@ -1,6 +1,7 @@
 <?php
+require_once "../lib/verifySession.php";
 require_once "../config/config.php";
-include_once '../view/navbar.php';
+
 $query= $link->query("SELECT name FROM game");
 ?>
 <html lang="en">
