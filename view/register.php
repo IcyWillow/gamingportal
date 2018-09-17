@@ -127,8 +127,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <input type="password" name="confirm_password" id="confirm_password" class="form-control" value="<?php echo $confirm_password; ?>" maxlength="50" />
             </div>
             <div class="form-group">
-                <button class="cancel-button" type="reset">Cancel</button>
-                <button class="b-orange h-orange" type="submit">Submit</button>
+                <button class="orange-cancel-button" type="reset">Cancel</button>
+                <button class="orange-submit-button" type="submit">Submit</button>
             </div>
             <p>Already have an account? <a class="a-orange" href="./login.php">Login here</a>.</p>
         </form>
