@@ -70,5 +70,23 @@ class Game {
         <p>',$this->publisher,'</p>
         </div>';
     }
+
+    //Show all Games
+    public function listAllGames(){
+
+        include("../config/config.php");
+
+        $sql = "SELECT * FROM game";
+        $result = $link->query($sql);
+
+        if ($result->num_rows > 0) {
+            while($row = $result->fetch_assoc()) {
+                $newGame = new Game($row['name'], $row['publisher'], $row['description'], $row['picture_directory']);
+                $newGame->makeCard();
+            }
+        } else {
+            echo "No results!";
+        }
+    }
 }
 ?>
