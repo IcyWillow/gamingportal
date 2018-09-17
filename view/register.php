@@ -109,7 +109,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <input type="password" name="confirm_password" id="confirm_password" class="form-control" value="<?php echo $confirm_password; ?>" maxlength="50" />
             </div>
             <div class="form-group">
-                <button class="orange-cancel-button" type="reset">Cancel</button>
+            <a class="orange-cancel-button button-link" href="../public/index.php" type="reset">Cancel</a>
                 <button class="orange-submit-button" type="submit">Submit</button>
             </div>
             <p>Already have an account? <a class="a-orange" href="./login.php">Login here</a>.</p>

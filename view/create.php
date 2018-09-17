@@ -24,7 +24,7 @@
       </section>
 
       <div class="form-group">
-        <button class="orange-cancel-button" type="reset">Cancel</button>
+        <a class="button-link orange-cancel-button" href="../public/index.php" type="reset">Cancel</a>
         <button class="orange-submit-button" type="submit">Submit</button>
       </div>
     </form>
