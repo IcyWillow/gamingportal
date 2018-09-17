@@ -27,5 +27,6 @@ $query= $link->query("SELECT name FROM game");
                 <button class="blue-submit-button" type="submit">Submit</button>
             </div>
         </form>
+        </div>
 </body>
 </html>
