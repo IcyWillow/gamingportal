@@ -23,7 +23,7 @@ $query= $link->query("SELECT name FROM game");
                 <input class="form-control f-blue" type="file" name="fileToUpload" id="fileToUpload" required />
             </section>
             <div class="form-group">
-                <button class="blue-cancel-button" type="reset">Cancel</button>
+                <a class="blue-cancel-button button-link" href="../public/index.php" type="reset">Cancel</a>
                 <button class="blue-submit-button" type="submit">Submit</button>
             </div>
         </form>
