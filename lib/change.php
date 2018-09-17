@@ -49,7 +49,7 @@ if ($uploadOk == 0) {
         $directory = "uploads/" . $pictureName;
 
         //Prepare for insert:
-        $sql = "UPDATE game SET game-title = ?, game-description = ?, game-publisher = ?, picture_directory = ? WHERE name = ?";
+        $sql = "UPDATE game SET name = ?, description = ?, publisher = ?, picture_directory = ? WHERE name = ?";
 
         $stmt = mysqli_prepare($link, $sql);
         $stmt->bind_param("sssss", $_POST['game-title'], $_POST['game-description'], $_POST['game-publisher'], $directory, $_POST['selected_game']);
