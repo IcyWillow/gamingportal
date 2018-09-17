@@ -105,26 +105,26 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         <h1>Sign Up</h1>
         <p>Please fill this form to create an account.</p>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-            <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
+            <div class="form-group f-orange <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
                 <label for="username">Username</label>
-                <input type="text" name="username" id="username" class="form-control" value="<?php echo $username; ?>" />
                 <span class="help-block">
                     <?php echo $username_err; ?>
                 </span>
+                <input type="text" name="username" id="username" class="form-control" value="<?php echo $username; ?>" />
             </div>
             <div class="form-group f-orange <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
                 <label for="password">Password</label>
-                <input type="password" name="password" id="password" class="form-control" value="<?php echo $password; ?>" />
                 <span class="help-block">
                     <?php echo $password_err; ?>
                 </span>
+                <input type="password" name="password" id="password" class="form-control" value="<?php echo $password; ?>" />
             </div>
             <div class="form-group f-orange <?php echo (!empty($confirm_password_err)) ? 'has-error' : ''; ?>">
                 <label for="confirm_password">Confirm Password</label>
-                <input type="password" name="confirm_password" id="confirm_password" class="form-control" value="<?php echo $confirm_password; ?>" />
                 <span class="help-block">
                     <?php echo $confirm_password_err; ?>
                 </span>
+                <input type="password" name="confirm_password" id="confirm_password" class="form-control" value="<?php echo $confirm_password; ?>" />
             </div>
             <div class="form-group">
                 <button class="b-orange h-orange" type="submit">Submit</button>
