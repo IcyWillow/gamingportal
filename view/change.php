@@ -1,6 +1,7 @@
-<?php
+﻿<?php
 
 require_once "../config/config.php";
+
 
 $query= $link->query("SELECT name FROM game");
 
@@ -13,6 +14,8 @@ $query= $link->query("SELECT name FROM game");
   <link rel="stylesheet" href="../public/css/style.css">
   <title>Game Portal</title>
 </head>
+
+
 
 <body>
   <div class="wrapper">
