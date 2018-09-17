@@ -53,7 +53,7 @@ a {
     outline: none;
 }
 
-#loginTitle {
+.loginTitle {
     margin-bottom: 20px;
 }
 
@@ -84,6 +84,7 @@ a {
 .cancel-button {
     background-color: white;
     border: 3px #F79421 solid;
+    margin-top: 0;
 }
 
 .cancel-button:hover {
