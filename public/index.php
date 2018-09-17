@@ -29,10 +29,9 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     </div>
   </header>
   <div class="content">
-      <form method="get">
-          <img src="./images/searchIcon.png" alt="search icon" />
+      <form class="search" method="get">
           <input type="text" name="search" id="search" />
-          <input type="submit" value="search" />
+          <input type="image" src="./images/searchIcon.png" value="search" />
       </form>
   
     <a class="gameCard add" href="../view/create.php">
