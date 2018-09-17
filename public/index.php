@@ -45,7 +45,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
             $newGame->makeCard();
           }
       } else {
-          echo "0 results";
+          echo "No results!";
       }
       ?>
     </div>
