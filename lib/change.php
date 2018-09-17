@@ -44,9 +44,10 @@ if ($uploadOk == 0) {
 // if everything is ok, try to upload file
 } else {
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
+        chdir("../public/index.php");
         echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
 
-        $directory = "uploads/" . $pictureName;
+        $directory = $target_dir . $pictureName;
 
         //Prepare for insert:
         $sql = "UPDATE game SET name = ?, description = ?, publisher = ?, picture_directory = ? WHERE name = ?";

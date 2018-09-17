@@ -30,17 +30,15 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   </header>
   <div class="content">
       <form method="get">
-
-
           <img src="./images/searchIcon.png" alt="search icon" />
           <input type="text" name="search" id="search" />
           <input type="submit" value="search" />
       </form>
   
-    <div class="gameCard add">
+    <a class="gameCard add" href="../view/create.php">
       <img src="./images/plusIcon.png" alt="add icon">
       <p id="createText">Create New</p>
-    </div>
+    </a>
     <div class="card-container">
         <?php
         require_once '../controller/GameController.php';
@@ -49,13 +47,13 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
       if (!empty($_REQUEST['search'])) {
   
 
-          $search = new Game();
+          $search = new Game(null, null, null, null);
           $search->getGameByName($_REQUEST['search']);
 
 
       } else {
 
-          $allGames = new Game();
+          $allGames = new Game(null, null, null, null);
           $allGames->listAllGames();
        
       }
