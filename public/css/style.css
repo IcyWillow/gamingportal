@@ -81,16 +81,6 @@ a {
     font-family: 'Open Sans', sans-serif;
 }
 
-.cancel-button {
-    background-color: white;
-    border: 3px #F79421 solid;
-    margin-top: 0;
-}
-
-.cancel-button:hover {
-    background-color: #f1f1f1; 
-}
-
 .w-blue {
     border-top: 10px #2BBBE9 solid;
 }
@@ -115,22 +105,40 @@ a {
     color: #F79421;
 }
 
-.b-blue {
+.blue-submit-button {
     background-color: #2BBBE9;
 }
 
-.b-orange {
+.orange-submit-button {
     background-color: #F79421;
 }
 
-.h-blue:hover {
-    background-color: rgb(39, 151, 189);
+.blue-submit-button:hover {
+    background-color: #2797bd;
 }
 
-.h-orange:hover {
-    background-color: rgb(221, 138, 43)
+.orange-submit-button:hover {
+    background-color: #dd8a2b
 }
 
 .help-block {
-    font-family: 'Open Sans', sans-serif; 
+    font-family: 'Open Sans', sans-serif;
+}
+
+.orange-cancel-button {
+    background-color: white;
+    border: 3px #F79421 solid;
+}
+
+.orange-cancel-button:hover {
+    background-color: #f1f1f1;
+}
+
+.blue-cancel-button {
+    background-color: white;
+    border: 3px #2BBBE9 solid;
+}
+
+.blue-cancel-button:hover {
+    background-color: #E1FFFF;
 }

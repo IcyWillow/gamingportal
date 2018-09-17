@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 // Initialize the session
 session_start();
 
@@ -29,29 +29,38 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     </div>
   </header>
   <div class="content">
-    <img src="./images/searchIcon.png" alt="search icon">
-    <input type="text" name="search" id="search">
+      <form method="get">
+
+
+          <img src="./images/searchIcon.png" alt="search icon" />
+          <input type="text" name="search" id="search" />
+          <input type="submit" value="search" />
+      </form>
+  
     <div class="gameCard add">
       <img src="./images/plusIcon.png" alt="add icon">
       <p id="createText">Create New</p>
     </div>
     <div class="card-container">
-      <?php
+        <?php
         require_once '../controller/GameController.php';
-        require_once "../config/config.php";
+ 
 
-        $sql = "SELECT * FROM game";
-        $result = $link->query($sql);
+      if (!empty($_REQUEST['search'])) {
+  
 
-        if ($result->num_rows > 0) {
-          while($row = $result->fetch_assoc()) {
-            $newGame = new Game($row['name'], $row['publisher'], $row['description'], $row['picture_directory']);
-            $newGame->makeCard();
-          }
+          $search = new Game();
+          $search->getGameByName($_REQUEST['search']);
+
+
       } else {
-          echo "0 results";
+
+          $allGames = new Game();
+          $allGames->listAllGames();
+       
       }
-      ?>
+
+        ?>
     </div>
   </div>
 </body>
