@@ -53,7 +53,7 @@ if ($uploadOk == 0) {
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
         echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
 
-        $directory = "uploads/" . $pictureName;
+        $directory = $target_dir . $pictureName;
 
         //Prepare for insert:
         $sql = "INSERT INTO game (name, description, publisher, picture_directory) VALUES (?,?,?,?)";

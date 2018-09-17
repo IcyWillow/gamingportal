@@ -41,7 +41,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
         if ($result->num_rows > 0) {
           while($row = $result->fetch_assoc()) {
-            $newGame = new Game($row['name'], $row['publisher'], $row['description']);
+            $newGame = new Game($row['name'], $row['publisher'], $row['description'], $row['picture_directory']);
             $newGame->makeCard();
           }
       } else {
