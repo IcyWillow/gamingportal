@@ -84,8 +84,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 </head>
 <body>
     <div class="wrapper w-orange">
-        <h1>Sign Up</h1>
-        <p>Please fill this form to create an account.</p>
+        <h1 class="loginTitle">Sign Up</h1>
+        <p class="introText">Please fill this form to create an account.</p>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <div class="form-group f-orange <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
                 <label for="username">Username</label>
