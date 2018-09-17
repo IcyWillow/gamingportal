@@ -110,21 +110,21 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <span class="help-block">
                     <?php echo $username_err; ?>
                 </span>
-                <input type="text" name="username" id="username" class="form-control" value="<?php echo $username; ?>" />
+                <input type="text" name="username" id="username" class="form-control" value="<?php echo $username; ?>" maxlength="50" />
             </div>
             <div class="form-group f-orange <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
                 <label for="password">Password</label>
                 <span class="help-block">
                     <?php echo $password_err; ?>
                 </span>
-                <input type="password" name="password" id="password" class="form-control" value="<?php echo $password; ?>" />
+                <input type="password" name="password" id="password" class="form-control" value="<?php echo $password; ?>" maxlength="50" />
             </div>
             <div class="form-group f-orange <?php echo (!empty($confirm_password_err)) ? 'has-error' : ''; ?>">
                 <label for="confirm_password">Confirm Password</label>
                 <span class="help-block">
                     <?php echo $confirm_password_err; ?>
                 </span>
-                <input type="password" name="confirm_password" id="confirm_password" class="form-control" value="<?php echo $confirm_password; ?>" />
+                <input type="password" name="confirm_password" id="confirm_password" class="form-control" value="<?php echo $confirm_password; ?>" maxlength="50" />
             </div>
             <div class="form-group">
                 <button class="cancel-button" type="reset">Cancel</button>
