@@ -1,6 +1,8 @@
-<?php
+﻿<?php
 // Initialize the session
 session_start();
+
+include_once '../view/navbar.php';
 
 $authentication = true;
 

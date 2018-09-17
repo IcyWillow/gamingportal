@@ -5,6 +5,7 @@ class Game {
     private $description;
     private $imgSource;
 
+
     //Creates new Game
     public function __construct($gameName, $publisher, $description, $imgSource) {
         $this->gameName = $gameName;

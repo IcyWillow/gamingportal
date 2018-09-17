@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 // Include config file
 require_once "../config/config.php";
 // Define variables and initialize with empty values
