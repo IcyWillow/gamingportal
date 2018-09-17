@@ -3,7 +3,10 @@
 require_once "../config/config.php";
 
 
+
 $query= $link->query("SELECT name FROM game");
+
+
 
 ?>
 
