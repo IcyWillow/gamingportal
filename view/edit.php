@@ -1,19 +1,13 @@
 <?php
-
 require_once "../config/config.php";
-
 $query= $link->query("SELECT name FROM game");
-
 ?>
-
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../public/css/style.css">
     <title>Game Portal</title>
 </head>
-
 <body>
     <div class="wrapper w-blue">
         <h1>Edit</h1>
@@ -28,12 +22,10 @@ $query= $link->query("SELECT name FROM game");
                 <label for="fileToUpload">Picture:</label>
                 <input class="form-control f-blue" type="file" name="fileToUpload" id="fileToUpload" required />
             </section>
-
             <div class="form-group">
                 <button class="blue-cancel-button" type="reset">Cancel</button>
                 <button class="blue-submit-button" type="submit">Submit</button>
             </div>
         </form>
 </body>
-
 </html>

@@ -5,11 +5,9 @@
   background-color: #333;
   font-family: 'Montserrat', sans-serif;
 }
-
 h1 {
   color: white;
 }
-
 input {
   width: calc(100% - 40px);
   height: 40px;
@@ -19,13 +17,11 @@ input {
   background-color: white;
   max-width: 720px;
 }
-
 label {
   font-size: 18px;
   color: white;
   margin-top: 10px;
 }
-
 button {
   cursor: pointer;
   height: 40px;
@@ -33,7 +29,6 @@ button {
   font-size: 18px;
   border: none;
 }
-
 .edit-form {
   width: 100%;
   height: 100%;
@@ -43,7 +38,6 @@ button {
   padding: 20px;
   border-top: 10px solid #2bbbe9;
 }
-
 .button-container {
   display: flex;
   justify-content: flex-end;
@@ -52,12 +46,10 @@ button {
   max-width: 720px;
   margin-top: 30px;
 }
-
 .submit-button {
   background-color: #2bbbe9;
   width: 50%;
 }
-
 .cancel-button {
   background-color: #f79421;
   width: 50%;
