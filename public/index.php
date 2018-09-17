@@ -18,6 +18,8 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   <meta charset="UTF-8">
   <title>Gaming Portal</title>
   <link rel="stylesheet" href="../public/css/home.css" />
+  <link rel="stylesheet" href="../public/css/navigation.css" />
+
 </head>
 
 <body>
@@ -25,7 +27,6 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <div class="bgImage"></div>
     <div class="headerContent">
       <!-- Not optimized gemäss Lehrperson -->
-      <?php if(!$authentication) {echo '<a href="../view/login.php">Login</a>';} else {echo '<a href="../view/logout.php">Logout</a>';} ?>
       <h1>Welcome <?php if($authentication) {echo  ucfirst(htmlspecialchars($_SESSION["username"])); } ?>!</h1>
       <img src="./images/logo.png">
     </div>
