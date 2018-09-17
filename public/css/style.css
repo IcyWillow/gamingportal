@@ -41,10 +41,6 @@ button {
     cursor: pointer;
 }
 
-button:hover {
-
-}
-
 a {
     text-decoration: none;
     font-weight: 550;
@@ -132,4 +128,8 @@ a {
 
 .h-orange:hover {
     background-color: rgb(221, 138, 43)
+}
+
+.help-block {
+    font-family: 'Open Sans', sans-serif; 
 }
