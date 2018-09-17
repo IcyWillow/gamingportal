@@ -15,21 +15,25 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 <head>
   <meta charset="UTF-8">
   <title>Gaming Portal</title>
+  <link rel="stylesheet" href="../public/css/home.css" />
 </head>
 
 <body>
   <header>
-    <!-- Not optimized gemäss Lehrperson -->
-    <?php if(!$authentication) {echo '<a href="../view/login.php">Login</a>';} else {echo '<a href="../view/logout.php">Logout</a>';} ?>
-    <h1>Welcome <?php if($authentication) {echo ucfirst(htmlspecialchars($_SESSION["username"])); } else {echo "Guest";} ?>!</h1>
-    <h2>Gaming Portal</h2>
+    <div class="bgImage"></div>
+    <div class="headerContent">
+      <!-- Not optimized gemäss Lehrperson -->
+      <?php if(!$authentication) {echo '<a href="../view/login.php">Login</a>';} else {echo '<a href="../view/logout.php">Logout</a>';} ?>
+      <h1>Welcome <?php if($authentication) {echo  ucfirst(htmlspecialchars($_SESSION["username"])); } ?>!</h1>
+      <img src="./images/logo.png">
+    </div>
   </header>
   <div class="content">
     <img src="./images/searchIcon.png" alt="search icon">
     <input type="text" name="search" id="search">
-    <div class="add">
+    <div class="gameCard add">
       <img src="./images/plusIcon.png" alt="add icon">
-      <p>Create New</p>
+      <p id="createText">Create New</p>
     </div>
     <div class="card-container">
       <?php
