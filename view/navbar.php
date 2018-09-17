@@ -11,7 +11,7 @@ echo '
  }
 
 
- echo '<a href="/public/index.php">Home</a>
+ echo '<a href="../public/index.php">Home</a>
 </div> ';
 
 ?>

@@ -80,6 +80,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <meta charset="UTF-8" />
     <title>Gaming Portal</title>
     <link rel="stylesheet" href="../public/css/style.css" />
+    <link rel="stylesheet" href="../public/css/forms.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
 </head>
 <body>

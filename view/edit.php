@@ -8,6 +8,7 @@ $query= $link->query("SELECT name FROM game");
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../public/css/style.css">
+    <link rel="stylesheet" href="../public/css/forms.css">
     <title>Game Portal</title>
 </head>
 <body>

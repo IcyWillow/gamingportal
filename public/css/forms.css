@@ -1,0 +1,112 @@
+.form-control {
+  height: 40px;
+  border: none;
+  width: 200px;
+  outline: none;
+}
+
+.loginTitle {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.wrapper {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  height: fit-content;
+  margin: 0 auto;
+  padding: 20px 20px 20px 20px;
+  max-width: 450px;
+  min-width: 350px;
+}
+
+.button-link {
+  text-decoration: none;
+  color: #000;
+  width: 200px;
+  height: 50px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: lighter;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.blue-cancel-button {
+  background-color: white;
+  border: 3px #2BBBE9 solid;
+}
+
+.blue-cancel-button:hover {
+  background-color: #E1FFFF;
+}
+
+.orange-cancel-button {
+  background-color: white;
+  border: 3px #F79421 solid;
+}
+
+.orange-cancel-button:hover {
+  background-color: #f1f1f1;
+}
+
+.help-block {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.blue-submit-button {
+  background-color: #2BBBE9;
+}
+
+.orange-submit-button {
+  background-color: #F79421;
+}
+
+.blue-submit-button:hover {
+  background-color: #2797bd;
+}
+
+.orange-submit-button:hover {
+  background-color: #dd8a2b
+}
+
+.a-blue {
+  color: #2BBBE9;
+}
+
+.a-orange {
+  color: #F79421;
+}
+
+.f-blue {
+  border-bottom: 2px solid #2BBBE9;
+}
+
+.f-orange {
+  border-bottom: 2px solid #F79421;
+}
+
+.w-blue {
+  border-top: 10px #2BBBE9 solid;
+}
+
+.w-orange {
+  border-top: 10px #F79421 solid;
+}
+
+.introText {
+  font-family: 'Open Sans', sans-serif;
+}
