@@ -28,7 +28,7 @@ h2 {
 }
 
 input {
-    outline:none;
+    outline: none;
 }
 
 .bgImage {
@@ -92,6 +92,11 @@ input {
     border-bottom: 3px #F79421 solid;
 }
 
-#createText{
+#createText {
     margin-top: 5px;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
 }
