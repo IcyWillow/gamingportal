@@ -13,8 +13,16 @@ h1 {
     text-transform: uppercase;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     background-color: #333333;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 label {
@@ -42,9 +50,8 @@ label {
     flex-direction: column;
     align-items: center;
     width: 50%;
-    height: 422px;
+    height: fit-content;
     margin: 0 auto;
-    margin-top: 10%;
     padding: 20px 20px 20px 20px;
     max-width: 450px;
     min-width: 350px;
