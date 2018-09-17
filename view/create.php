@@ -1,4 +1,6 @@
 <?php
+require_once "../lib/verifySession.php";
+
 ?>
 <html lang="en">
 

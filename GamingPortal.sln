@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2026
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{A0786B88-2ADB-4C21-ABE8-AA2D79766269}") = "GamingPortal", "GamingPortal.phpproj", "{33D875AA-3916-4398-8360-CC57593F6C9F}"
+Project("{A0786B88-2ADB-4C21-ABE8-AA2D79766269}") = "GamingPortalREmake", "GamingPortalREmake.phpproj", "{08046AF5-5CE5-48DF-A7EA-7BF16D692A7F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,13 +11,13 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{33D875AA-3916-4398-8360-CC57593F6C9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{33D875AA-3916-4398-8360-CC57593F6C9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08046AF5-5CE5-48DF-A7EA-7BF16D692A7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08046AF5-5CE5-48DF-A7EA-7BF16D692A7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {7BD14DDA-27CE-4CB7-AFC1-7E8A726640EC}
+		SolutionGuid = {E395DBCE-BFCE-497C-9F66-8EFAE9ABF972}
 	EndGlobalSection
 EndGlobal
