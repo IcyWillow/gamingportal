@@ -3,6 +3,9 @@
 require_once "../config/config.php";
 
 $id = $_GET['id'];
+$imageSrc = $_GET['image-src'];
+
+unlink($imageSrc);
 
 $sql = "DELETE FROM game WHERE id=?";
 
