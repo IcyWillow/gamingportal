@@ -12,5 +12,5 @@ CREATE TABLE game (
     name NVARCHAR(50) NOT NULL,
     publisher NVARCHAR(50) NOT NULL,
     description nvarchar(500) NOT NULL,
-    picture_directory nvarchar(150)
+    picture_directory nvarchar(100)
 );

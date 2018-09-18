@@ -26,7 +26,7 @@ if(isset($_POST["submit"])) {
     }
 }
 // Check is filename is too long
-if (strlen($pictureName) > 150) {
+if (strlen($pictureName) > 100) {
     $uploadOk = 0;
 }
 
