@@ -48,6 +48,8 @@ if ($uploadOk == 0) {
     // if everything is ok, try to upload file
 } else {
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
+
+        header("location: ../public/index.php");
         echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
 
         $directory = $target_dir . $pictureName;
