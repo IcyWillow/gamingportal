@@ -106,20 +106,20 @@ input {
 
 .cardInfo {
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
 }
 
 .gametitle {
     margin-left: 5%;
-    margin-right: 100px;
+    width: 300px;
 }
 
 .gameCard {
     display: flex;
     flex-direction: row;
-    width: 45%;
+    width: 47.5%;
     height: 100px;
     margin: 0 auto;
     margin-bottom: 15px;
@@ -131,12 +131,20 @@ input {
     justify-content: center;
     background-color: #2BBBE9;
     text-decoration: none;
-    width: 95%;
+    width: 97.5%;
 }
 
 .card-container {
     display: flex;
     flex-wrap: wrap;
+}
+
+.icon {
+    margin-right: 30px;
+}
+
+.publisher{
+    margin-left: -20%;
 }
 
 @media only screen and (max-width: 1300px) {

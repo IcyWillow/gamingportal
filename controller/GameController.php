@@ -41,7 +41,7 @@ class Game {
         </div>
         <div class="cardInfo">
             <h3 class="gameTitle">',$this->gameName,'</h3>
-            <p>',$this->publisher,'</p>
+            <p class="publisher">',$this->publisher,'</p>
         <a href="../view/edit.php"><img class="icon" src="../public/images/penIcon.png" alt="edit icon" /></a>
         </div>
         </div>';
