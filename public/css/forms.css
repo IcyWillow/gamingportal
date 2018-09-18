@@ -16,19 +16,6 @@
   margin-top: 10px;
 }
 
-.wrapper {
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 50%;
-  height: fit-content;
-  margin: 0 auto;
-  padding: 20px 20px 20px 20px;
-  max-width: 450px;
-  min-width: 350px;
-}
-
 .button-link {
   text-decoration: none;
   color: #000;
