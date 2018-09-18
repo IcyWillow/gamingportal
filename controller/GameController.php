@@ -1,13 +1,14 @@
 <?php
 class Game {
+    private $id;
     private $gameName;
     private $publisher;
     private $description;
     private $imgSource;
 
-
     //Creates new Game
-    public function __construct($gameName, $publisher, $description, $imgSource) {
+    public function __construct($id, $gameName, $publisher, $description, $imgSource) {
+        $this->id = $id;
         $this->gameName = $gameName;
         $this->publisher = $publisher;
         $this->description = $description;
@@ -42,7 +43,8 @@ class Game {
         <div class="cardInfo">
             <h3 class="gameTitle">',$this->gameName,'</h3>
             <p class="publisher">',$this->publisher,'</p>
-        <a class="icon-link" href="../view/edit.php?name=',$this->gameName,'&publisher=',$this->publisher,'&image-src=',$this->imgSource,'"><img class="icon" src="../public/images/penIcon.png" alt="edit icon" /></a>
+            <a class="icon-link" href="../lib/delete.php?id=',$this->id,'"><img class="icon" src="../public/images/bin.png" alt="delete icon" /></a>
+            <a class="icon-link" href="../view/edit.php?name=',$this->gameName,'&publisher=',$this->publisher,'&image-src=',$this->imgSource,'"><img class="icon" src="../public/images/penIcon.png" alt="edit icon" /></a>
         </div>
         </div>';
     }
@@ -53,7 +55,7 @@ class Game {
         $result = $link->query($sql);
         if ($result->num_rows > 0) {
             while($row = $result->fetch_assoc()) {
-                $newGame = new Game($row['name'], $row['publisher'], $row['description'], $row['picture_directory']);
+                $newGame = new Game($row['id'], $row['name'], $row['publisher'], $row['description'], $row['picture_directory']);
                 $newGame->makeCard();
             }
         } else {
