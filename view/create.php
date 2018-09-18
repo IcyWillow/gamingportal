@@ -1,6 +1,7 @@
 <?php
 require_once "../lib/verifySession.php";
 
+include_once '../view/navbar.php';
 ?>
 <html lang="en">
 
@@ -8,6 +9,7 @@ require_once "../lib/verifySession.php";
   <meta charset="UTF-8">
   <link rel="stylesheet" href="../public/css/style.css">
   <link rel="stylesheet" href="../public/css/forms.css">
+  <link rel="stylesheet" href="../public/css/navigation.css">
   <title>Game Portal</title>
 </head>
 

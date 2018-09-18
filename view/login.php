@@ -1,6 +1,8 @@
 <?php
 // Initialize the session
 session_start();
+
+include_once '../view/navbar.php';
 // Check if the user is already logged in, if yes then redirect him to welcome page
 if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
     header("location: ../public/index.php");
@@ -79,6 +81,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <title>Gaming Portal</title>
     <link rel="stylesheet" type="text/css" href="../public/css/style.css">
     <link rel="stylesheet" href="../public/css/forms.css">
+    <link rel="stylesheet" href="../public/css/navigation.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
 </head>
 <body>

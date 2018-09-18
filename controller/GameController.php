@@ -36,10 +36,14 @@ class Game {
     //Creates new Gamecard for game
     public function makeCard() {
         echo '<div class="gameCard">
-        <img class="thumbnail" src="'.$this->imgSource.'" alt="Picture of the Game" />
-        <h3 class="gameTitle">',$this->gameName,'</h3>
-        <p>',$this->publisher,'</p>
-        <img class="icon" src="../public/images/penIcon.png" alt="edit icon" />
+        <div class="thumbnailContainer">
+            <img class="thumbnail" src="'.$this->imgSource.'" alt="Picture of the Game" />
+        </div>
+        <div class="cardInfo">
+            <h3 class="gameTitle">',$this->gameName,'</h3>
+            <p>',$this->publisher,'</p>
+            <img class="icon" src="../public/images/penIcon.png" alt="edit icon" />
+        </div>
         </div>';
     }
     //Show all Games

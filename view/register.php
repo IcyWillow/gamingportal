@@ -1,6 +1,8 @@
 <?php
 // Include config file
 require_once "../config/config.php";
+
+include_once '../view/navbar.php';
 // Define variables and initialize with empty values
 $username = $password = $confirm_password = "";
 $username_err = $password_err = $confirm_password_err = "";
@@ -81,6 +83,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <title>Gaming Portal</title>
     <link rel="stylesheet" href="../public/css/style.css" />
     <link rel="stylesheet" href="../public/css/forms.css">
+    <link rel="stylesheet" href="../public/css/navigation.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
 </head>
 <body>

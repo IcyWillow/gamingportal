@@ -36,8 +36,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
           <input type="text" name="search" id="search" />
           <input type="image" src="./images/searchIcon.png" value="search" />
       </form>
-  
-    <a class="gameCard add" href="../view/create.php">
+      <a class="gameCard add" href="../view/create.php">
       <img src="./images/plusIcon.png" alt="add icon">
       <p id="createText">Create New</p>
     </a>

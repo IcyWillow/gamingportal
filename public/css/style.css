@@ -13,6 +13,11 @@ h1 {
     text-transform: uppercase;
 }
 
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
 html {
     height: 100%;
 }
@@ -44,5 +49,4 @@ button {
 
 a {
     text-decoration: none;
-    font-weight: 550;
 }
