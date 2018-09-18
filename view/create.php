@@ -1,8 +1,4 @@
-<?php
-require_once "../lib/verifySession.php";
-
-include_once '../view/navbar.php';
-?>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -14,6 +10,10 @@ include_once '../view/navbar.php';
 </head>
 
 <body>
+<?php
+require_once "../lib/verifySession.php";
+include_once '../view/navbar.php';
+?>
   <div class="wrapper w-orange">
     <h1>Create</h1>
     <form action="../lib/upload.php" method="post" class="edit-form" enctype="multipart/form-data">
@@ -27,7 +27,7 @@ include_once '../view/navbar.php';
       </section>
 
       <div class="form-group">
-        <a class="button-link orange-cancel-button" href="../public/index.php" type="reset">Cancel</a>
+        <a class="button-link orange-cancel-button" href="../public/index.php">Cancel</a>
         <button class="orange-submit-button" type="submit">Submit</button>
       </div>
     </form>

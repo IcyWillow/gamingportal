@@ -1,4 +1,4 @@
-a {
+.back {
   width: 200px;
   height: 50px;
   margin-top: 15px;
@@ -28,8 +28,9 @@ h1 {
   margin-bottom: 15px;
 }
 
-a:hover {
+.back:hover {
   background-color: #f1f1f1;
+  color: black;
 }
 
 .wrapper {

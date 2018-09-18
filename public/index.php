@@ -2,8 +2,6 @@
 // Initialize the session
 session_start();
 
-include_once '../view/navbar.php';
-
 $authentication = true;
 
 // Check if the user is logged in, if not then redirect him to login page
@@ -12,7 +10,9 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 }
 ?>
 
+<!DOCTYPE html>
 <html lang="en">
+
 
 <head>
   <meta charset="UTF-8">
@@ -23,18 +23,19 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 </head>
 
 <body>
+  <?php include_once '../view/navbar.php'; ?>
   <header>
     <div class="bgImage"></div>
     <div class="headerContent">
       <!-- Not optimized gemäss Lehrperson -->
       <h1>Welcome <?php if($authentication) {echo  ucfirst(htmlspecialchars($_SESSION["username"])); } ?>!</h1>
-      <img src="./images/logo.png">
+      <img src="./images/logo.png" alt="logo">
     </div>
   </header>
   <div class="content">
       <form class="search" method="get">
           <input type="text" name="search" id="search" />
-          <input type="image" src="./images/searchIcon.png" value="search" />
+          <input type="image" src="./images/searchIcon.png" alt="search icon" />
       </form>
       <a class="gameCard add" href="../view/create.php">
       <img src="./images/plusIcon.png" alt="add icon">
