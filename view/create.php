@@ -22,8 +22,6 @@ include_once '../view/navbar.php';
         <input class="form-control f-orange" type="text" name="game-title" id="game-title" required />
         <label for="game-publisher">Publisher:</label>
         <input class="form-control f-orange" type="text" name="game-publisher" id="game-publisher" required />
-        <label for="game-description">Description:</label>
-        <input class="form-control f-orange" type="text" name="game-description" id="game-description" required />
         <label for="fileToUpload">Picture:</label>
         <input class="form-control f-orange" type="file" name="fileToUpload" id="fileToUpload" required />
       </section>

@@ -3,15 +3,13 @@ class Game {
     private $id;
     private $gameName;
     private $publisher;
-    private $description;
     private $imgSource;
 
     //Creates new Game
-    public function __construct($id, $gameName, $publisher, $description, $imgSource) {
+    public function __construct($id, $gameName, $publisher, $imgSource) {
         $this->id = $id;
         $this->gameName = $gameName;
         $this->publisher = $publisher;
-        $this->description = $description;
         $this->imgSource = $imgSource;
     }
     //Get a game by ID
@@ -21,7 +19,6 @@ class Game {
         while ($rows = $query->fetch_array(MYSQLI_ASSOC)) {
             $this->gameName = $rows['name'];
             $this->publisher = $rows['publisher'];
-            $this->description = $rows['description'];
             $this->imgSource = $rows['picture_directory'];
         }
     }
@@ -30,7 +27,7 @@ class Game {
         include("../config/config.php");
         $query= $link->query("SELECT * FROM game where name LIKE '%" . $g_name . "%';");
         while ($rows = $query->fetch_array(MYSQLI_ASSOC)) {
-            $foundGame = new Game($rows['id'], $rows['name'], $rows['publisher'], $rows['description'], $rows['picture_directory']);
+            $foundGame = new Game($rows['id'], $rows['name'], $rows['publisher'], $rows['picture_directory']);
             $foundGame->makeCard();
         }
     }
@@ -57,7 +54,7 @@ class Game {
         $result = $link->query($sql);
         if ($result->num_rows > 0) {
             while($row = $result->fetch_assoc()) {
-                $newGame = new Game($row['id'], $row['name'], $row['publisher'], $row['description'], $row['picture_directory']);
+                $newGame = new Game($row['id'], $row['name'], $row['publisher'], $row['picture_directory']);
                 $newGame->makeCard();
             }
         } else {
