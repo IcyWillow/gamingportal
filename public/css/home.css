@@ -108,3 +108,8 @@ input {
     width: 25px;
     height: 25px;
 }
+
+.thumbnail {
+    height: 100px;
+    width: 100px;
+}
