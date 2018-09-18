@@ -43,8 +43,10 @@ class Game {
         <div class="cardInfo">
             <h3 class="gameTitle">',$this->gameName,'</h3>
             <p class="publisher">',$this->publisher,'</p>
-            <a class="icon-link" href="../lib/delete.php?id=',$this->id,'&image-src=',$this->imgSource,'"><img class="icon" src="../public/images/bin.png" alt="delete icon" /></a>
-            <a class="icon-link" href="../view/edit.php?name=',$this->gameName,'&publisher=',$this->publisher,'&image-src=',$this->imgSource,'"><img class="icon" src="../public/images/penIcon.png" alt="edit icon" /></a>
+            <div class="crudIcon">
+                <a class="icon-link" href="../lib/delete.php?id=',$this->id,'&image-src=',$this->imgSource,'"><img class="icon" src="../public/images/bin.png" alt="delete icon" /></a>
+                <a class="icon-link" href="../view/edit.php?name=',$this->gameName,'&publisher=',$this->publisher,'&image-src=',$this->imgSource,'"><img class="icon" src="../public/images/penIcon.png" alt="edit icon" /></a>
+            </div>
         </div>
         </div>';
     }

@@ -106,9 +106,9 @@ input {
 
 .cardInfo {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     width: 100%;
+    justify-content: space-around;
 }
 
 .gametitle {
@@ -145,12 +145,14 @@ input {
     color: black;
 }
 
-.icon {
-    margin-right: 30px;
+.publisher {
+    position: relative;
+    right: 50px;
+    width: 100px;
 }
 
-.publisher {
-    margin-left: -20%;
+.crudIcon {
+    align-self: flex-end;
 }
 
 @media only screen and (max-width: 1300px) {
