@@ -42,7 +42,7 @@ class Game {
         <div class="cardInfo">
             <h3 class="gameTitle">',$this->gameName,'</h3>
             <p>',$this->publisher,'</p>
-            <img class="icon" src="../public/images/penIcon.png" alt="edit icon" />
+        <a href="../view/edit.php"><img class="icon" src="../public/images/penIcon.png" alt="edit icon" /></a>
         </div>
         </div>';
     }
