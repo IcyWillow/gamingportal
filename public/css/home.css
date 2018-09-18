@@ -73,6 +73,11 @@ input {
     flex-direction: column;
     justify-content: center;
     background-color: #2BBBE9;
+    text-decoration: none;
+}
+
+.add:hover {
+    background-color: rgb(33, 150, 189);
 }
 
 .search {
@@ -95,6 +100,8 @@ input {
 
 #createText {
     margin-top: 5px;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
 }
 
 .icon {
