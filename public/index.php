@@ -48,13 +48,13 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
       if (!empty($_REQUEST['search'])) {
   
 
-          $search = new Game(null, null, null, null, null);
+          $search = new Game(null, null, null, null);
           $search->getGameByName($_REQUEST['search']);
 
 
       } else {
 
-          $allGames = new Game(null, null, null, null, null);
+          $allGames = new Game(null, null, null, null);
           $allGames->listAllGames();
        
       }

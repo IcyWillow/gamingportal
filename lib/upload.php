@@ -49,10 +49,10 @@ if ($uploadOk == 0) {
         $directory = $target_dir . $pictureName;
 
         //Prepare for insert:
-        $sql = "INSERT INTO game (name, description, publisher, picture_directory) VALUES (?,?,?,?)";
+        $sql = "INSERT INTO game (name, publisher, picture_directory) VALUES (?,?,?)";
 
         $stmt = mysqli_prepare($link, $sql);
-        $stmt->bind_param("ssss", $_POST['game-title'], $_POST['game-description'], $_POST['game-publisher'], $directory);
+        $stmt->bind_param("sss", $_POST['game-title'], $_POST['game-publisher'], $directory);
         $stmt->execute();
 
     } else {

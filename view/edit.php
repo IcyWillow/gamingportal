@@ -23,8 +23,6 @@ $imgSrc = $_GET['image-src'];
                 <input class="form-control f-blue" type="text" name="game-title" id="game-title" value="<?php echo $name ?>" required />
                 <label for="game-publisher">Publisher:</label>
                 <input class="form-control f-blue" type="text" name="game-publisher" id="game-publisher" value="<?php echo $publisher ?>" required />
-                <label for="game-description">Description:</label>
-                <input class="form-control f-blue" type="text" name="game-description" id="game-description" value="" required />
             </section>
             <div class="form-group">
                 <a class="blue-cancel-button button-link" href="../public/index.php" type="reset">Cancel</a>
