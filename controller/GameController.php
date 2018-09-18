@@ -30,7 +30,7 @@ class Game {
         include("../config/config.php");
         $query= $link->query("SELECT * FROM game where name LIKE '%" . $g_name . "%';");
         while ($rows = $query->fetch_array(MYSQLI_ASSOC)) {
-            $foundGame = new Game($rows['name'], $rows['publisher'], $rows['description'], $rows['picture_directory']);
+            $foundGame = new Game($rows['id'], $rows['name'], $rows['publisher'], $rows['description'], $rows['picture_directory']);
             $foundGame->makeCard();
         }
     }
