@@ -48,7 +48,7 @@ if ($uploadOk == 0) {
 
         $directory = $target_dir . $pictureName;
 
-        //Prepare for insert:
+        //Prepare for insert
         $sql = "INSERT INTO game (name, publisher, picture_directory) VALUES (?,?,?)";
 
         $stmt = mysqli_prepare($link, $sql);
@@ -56,7 +56,7 @@ if ($uploadOk == 0) {
         $stmt->execute();
 
     } else {
-        echo "Sorry, there was an error uploading your file.";
+        header("location: ../view/upload-error.php");
     }
 }
 ?>
