@@ -42,7 +42,7 @@ class Game {
             <p class="publisher">'. htmlentities($this->publisher) .'</p>
             <div class="crudIcon">
                 <a class="icon-link" href="../lib/delete.php?id='.$this->id.'&image-src='.$this->imgSource.'"><img class="icon" src="../public/images/bin.png" alt="delete icon" /></a>
-                <a class="icon-link" href="../view/edit.php?name='.urlencode($this->gameName).'&publisher='.urlencode($this->publisher)"><img class="icon" src="../public/images/penIcon.png" alt="edit icon" /></a>
+                <a class="icon-link" href="../view/edit.php?name='.urlencode($this->gameName).'&publisher='.urlencode($this->publisher).'"><img class="icon" src="../public/images/penIcon.png" alt="edit icon" /></a>
             </div>
         </div>
         </div>';
