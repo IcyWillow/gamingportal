@@ -35,14 +35,14 @@ class Game {
     public function makeCard() {
         echo '<div class="gameCard">
         <div class="thumbnailContainer">
-            <img class="thumbnail" src="'.$this->imgSource.'" alt="Picture of the Game" />
+            <img class="thumbnail" src="'. htmlentities($this->imgSource) .'" alt="Picture of the Game" />
         </div>
         <div class="cardInfo">
-            <h3 class="gameTitle">'.$this->gameName.'</h3>
-            <p class="publisher">'.$this->publisher.'</p>
+            <h3 class="gameTitle">'. htmlentities($this->gameName) .'</h3>
+            <p class="publisher">'. htmlentities($this->publisher) .'</p>
             <div class="crudIcon">
                 <a class="icon-link" href="../lib/delete.php?id='.$this->id.'&image-src='.$this->imgSource.'"><img class="icon" src="../public/images/bin.png" alt="delete icon" /></a>
-                <a class="icon-link" href="../view/edit.php?name='.urlencode($this->gameName).'&publisher='.urlencode($this->publisher).'&image-src='.$this->imgSource.'"><img class="icon" src="../public/images/penIcon.png" alt="edit icon" /></a>
+                <a class="icon-link" href="../view/edit.php?name='.urlencode($this->gameName).'&publisher='.urlencode($this->publisher).'"><img class="icon" src="../public/images/penIcon.png" alt="edit icon" /></a>
             </div>
         </div>
         </div>';

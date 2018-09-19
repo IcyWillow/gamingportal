@@ -1,14 +1,5 @@
 <?php
 
-/**
- * upload images for games.
- *
- *
- * @version 1.0
- * @author Willow
- *
- */
-
 require_once "../config/config.php";
 
 $target_dir = "../uploads/";
