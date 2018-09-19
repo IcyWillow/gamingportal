@@ -44,14 +44,12 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <div class="card-container">
         <?php
         require_once '../controller/GameController.php';
- 
 
+        // checks if something is searched
       if (!empty($_REQUEST['search'])) {
-  
 
           $search = new Game(null, null, null, null);
           $search->getGameByName($_REQUEST['search']);
-
 
       } else {
 
@@ -59,7 +57,6 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
           $allGames->listAllGames();
        
       }
-
         ?>
     </div>
   </div>

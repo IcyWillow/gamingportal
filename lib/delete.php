@@ -7,6 +7,7 @@ $imageSrc = $_GET['image-src'];
 
 unlink($imageSrc);
 
+// delete function for the games
 $sql = "DELETE FROM game WHERE id=?";
 
 $stmt = mysqli_prepare($link, $sql);
