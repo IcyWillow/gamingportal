@@ -81,7 +81,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <link rel="stylesheet" type="text/css" href="../public/css/style.css">
     <link rel="stylesheet" href="../public/css/forms.css">
     <link rel="stylesheet" href="../public/css/navigation.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat%7COpen+Sans" rel="stylesheet">
 </head>
 <body>
     <?php include_once '../view/navbar.php'; ?>
