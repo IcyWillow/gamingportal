@@ -2,7 +2,6 @@
 // Initialize the session
 session_start();
 
-include_once '../view/navbar.php';
 // Check if the user is already logged in, if yes then redirect him to welcome page
 if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
     header("location: ../public/index.php");
@@ -82,9 +81,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <link rel="stylesheet" type="text/css" href="../public/css/style.css">
     <link rel="stylesheet" href="../public/css/forms.css">
     <link rel="stylesheet" href="../public/css/navigation.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat%7COpen+Sans" rel="stylesheet">
 </head>
 <body>
+    <?php include_once '../view/navbar.php'; ?>
     <div class="wrapper w-blue">
         <h1 class="loginTitle">Login</h1>
         <p class="introText">Please fill in your credentials to login.</p>

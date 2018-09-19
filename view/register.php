@@ -2,7 +2,6 @@
 // Include config file
 require_once "../config/config.php";
 
-include_once '../view/navbar.php';
 // Define variables and initialize with empty values
 $username = $password = $confirm_password = "";
 $username_err = $password_err = $confirm_password_err = "";
@@ -77,6 +76,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     mysqli_close($link);
 }
 ?>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
@@ -84,9 +84,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <link rel="stylesheet" href="../public/css/style.css" />
     <link rel="stylesheet" href="../public/css/forms.css">
     <link rel="stylesheet" href="../public/css/navigation.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat%7COpen+Sans" rel="stylesheet">
 </head>
 <body>
+    <?php include_once '../view/navbar.php'; ?>
     <div class="wrapper w-orange">
         <h1 class="loginTitle">Sign Up</h1>
         <p class="introText">Please fill this form to create an account.</p>
@@ -113,7 +114,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <input type="password" name="confirm_password" id="confirm_password" class="form-control" value="<?php echo $confirm_password; ?>" maxlength="50" />
             </div>
             <div class="form-group">
-            <a class="orange-cancel-button button-link" href="../public/index.php" type="reset">Cancel</a>
+            <a class="orange-cancel-button button-link" href="../public/index.php">Cancel</a>
                 <button class="orange-submit-button" type="submit">Submit</button>
             </div>
             <p>Already have an account? <a class="a-orange" href="./login.php">Login here</a>.</p>

@@ -38,6 +38,7 @@
 
 .blue-cancel-button:hover {
   background-color: #E1FFFF;
+  color: #000;
 }
 
 .orange-cancel-button {
@@ -47,6 +48,7 @@
 
 .orange-cancel-button:hover {
   background-color: #f1f1f1;
+  color: #000;
 }
 
 .help-block {

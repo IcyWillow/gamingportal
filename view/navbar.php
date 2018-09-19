@@ -1,6 +1,4 @@
 <?php
-
-
 echo '
  <div class="topnav">';
 
@@ -10,8 +8,6 @@ echo '
      echo '<a class="login" href="../view/logout.php">Logout</a>';
  }
 
-
  echo '<a href="../public/index.php">Home</a>
 </div> ';
-
 ?>
